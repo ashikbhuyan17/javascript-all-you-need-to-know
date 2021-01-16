@@ -18,8 +18,13 @@
     // console.log(isHot)
 
 // undefined => false
-// null => false
+    // null => false
 
+// infinity
+console.log(1/0)
+
+// NAN => not a number
+console.log('abc' * 10)
 
 // object type:
     // 1.array

@@ -1,10 +1,3 @@
-var nameIs = 'My name is Ashik'
-console.log(nameIs.length)
-console.log(nameIs.toLocaleLowerCase())
-console.log(nameIs.toUpperCase())
-console.log(nameIs.indexOf('is'))
-console.log(nameIs.lastIndexOf())
-
 //  integer float parseInt parseFloat type conversion (parseint => parseInt/parseFloat)
 
 // parseInt
@@ -37,10 +30,14 @@ console.log(typeof b);
 
 // convert string TO number
 // ''+Number1 => kono ekta empty sathe jody number summation koro thle oi numberta string e convert hoiye jave
-var Number1 = 200;;
-var Number2 = 300;;
+var Number1 = 200;
+var Number2 = 300;
 Number1 = '' + Number1;
 console.log('datatype : ' + typeof (Number1) + '   And the number1 is = ' + Number1)
+// or
+var Number1 = 200;
+console.log(Number1.toString())
+console.log('convert string TO number ' + typeof( Number1.toString() ) + Number1 )
 
 
 
