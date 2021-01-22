@@ -38,7 +38,7 @@ function budgetCalculator(watch, phone, laptop) {
 
     return totalAmmoun;
 }
-var numberOfWatch = -9;
+var numberOfWatch = 2;
 var numberOfPhone = 3;
 var numberOfLaptop = 2;
 
@@ -72,7 +72,7 @@ function hotelCost(totalDay) {
     }
 
 }
-var totalDay = 22
+var totalDay = 16
 var totalCost = hotelCost(totalDay)
 console.log('Total Hotel cost = ' + totalCost)
 
@@ -92,7 +92,7 @@ function megaFriend(arr) {
     }
     return result;
 }
-var freiendsName = ["jamal ", "opu", "minhaj", "emon shah","jannat"]
+var freiendsName = ["jamal ", "opu", "minhaj", "emon shah", "jannat"]
 var largestName = megaFriend(freiendsName)
 console.log('the largest string = ' + largestName)
 
