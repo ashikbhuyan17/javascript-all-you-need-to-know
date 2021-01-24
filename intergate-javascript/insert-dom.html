@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <article id="first-article">
+            <h1 id="h11">h1-1</h1>
+            <p class="edit">lorem10</p>
+        </article>
+        <article>
+            <h1>h1-2</h1>
+            <p id="edit">lorem11</p>
+        </article>
+        <article id="remove">
+            <h1>h1-3</h1>
+            <p>lorem12</p>
+        </article>
+        <article>
+            <ul id="gift-list">
+                <li>gift-item-1</li>
+                <li>gift-item-2</li>
+                <li>gift-item-3</li>
+                <li>gift-item-4</li>
+                <li>gift-item-5</li>
+            </ul>
+        </article>
+
+    </section>
+
+    <script>
+        const article = document.getElementById('first-article')
+        console.log(article)
+        const newPeragraph = document.createElement('p')
+        newPeragraph.innerHTML = 'this is added by  js '
+        article.appendChild(newPeragraph)
+
+
+        // add one more gift item 
+        // update elements
+        const list = document.getElementById('gift-list')
+        console.log(list);
+        const addList = document.createElement('li');
+        addList.innerHTML = 'added extra gift item';
+        list.appendChild(addList)
+
+        // remove element
+        var delet = document.getElementById('remove')
+        delet.remove()
+
+
+    </script>
+</body>
+
+</html>
