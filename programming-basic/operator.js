@@ -1,6 +1,5 @@
-/*Arithmetic operator
-+ - * / % 
-*/
+// Arithmetic operator -> +, -, *, / , %, ++, --, ** (exponentiation)
+// Assignment operator -> =, +=, -=, *=, /=, %=
 
 /* increasement 
 pre-increment(++x) , post-increment(x++)

@@ -10,7 +10,7 @@
  // Number
  // 10,10.11
 // String
-    // 'hwllo world'
+    // 'hello world'
     // 'my name is ' + 'ashik'
 // Boolean
     // true/false

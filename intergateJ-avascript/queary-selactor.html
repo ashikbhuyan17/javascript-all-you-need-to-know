@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <article>
+            <h1 id="h11">h1-1</h1>
+            <p class="edit">lorem10</p>
+        </article>
+        <article>
+            <h1>h1-2</h1>
+            <p class="edit">lorem11</p>
+        </article>
+        <article>
+            <h1>h1-3</h1>
+            <p class="edit">lorem12</p>
+        </article>
+
+    </section>
+
+    <script>
+        // querySelector ekane 1st je element takhbe oita show krbe
+        document.querySelector('#h11').style.color = 'red'
+
+        // querySelectorAll => element gulu array moto kore asbe
+        var result = document.querySelectorAll('article .edit')
+        for (let i = 0; i < result.length; i++) {
+            const element = result[i];
+            element.style.backgroundColor = 'red'
+            element.style.fontSize = '30px'
+            // change innerHtml
+            console.log(element.innerHTML)
+            element.innerHTML = 'author' + (i + 1)
+        }
+
+
+    </script>
+</body>
+
+</html>
