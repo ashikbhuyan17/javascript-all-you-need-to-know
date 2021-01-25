@@ -1,0 +1,53 @@
+<!-- 
+    ইভেন্ট কি? kichu ekta hobe bha ghotbe
+
+ওয়েব পেজে (ডকুমেন্ট বা ব্রাউজারে) ইউজার কখনও মাউস ক্লিক করে(কোন একটা লিংক বা যেকোন কিছুর উপর), 
+কিবোর্ড দিয়ে টাইপ করে (ফর্ম থাকলে),  কখনও কোন একটা এলিমেন্টের উপর মাউস নিয়ে যেতে (মাউস হোভার) পারে এটা কোন লিংক, 
+প্যারাগ্রাফ, ইনপুট ফিল্ড বা যেকোন কিছুর উপরে হতে পারে। এগুলি হচ্ছে এক একটা ইভেন্ট। 
+যেমন কোন একটা প্যারাগ্রাফ বা বাটনের উপর ক্লিক করলেন, তাহলে এটা একটা ইভেন্ট (ক্লিক ইভেন্ট)। 
+কোন একটা এলিমেন্টের উপর মাউস নিয়ে গেলেন এটা একটা ইভেন্ট(মাউস হোভার ইভেন্ট)। 
+এরুপ অনেক ইভেন্ট আছে যেমন click, mouseover, load ইত্যাদি।
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button> Click Me </button>
+    <!--  inline event
+        
+        <button onclick="alert('try again')">Click Me </button>
+    <br>
+    <br>
+    <br>
+    <button onmouseover="alert('try again')">Click Me </button>
+
+    <br>
+    <br>
+    <br>
+    <button onmouseenter="alert('try again')">Click Me </button> -->
+    <button onclick="console.log('Click Me 2');">Click Me 2</button>
+    <br>
+    <br>
+
+    <button onclick="handleClick()">Click Me 3</button>
+    <script>
+        function handleClick() {
+            console.log(new Date());
+        }
+    </script>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

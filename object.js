@@ -11,19 +11,19 @@ console.log(ages)
 
 // 3rd steps
 
-var nameofstudent2 ="name" 
+var nameofstudent2 = "name"
 var nameNo = student2[nameofstudent2]
-console.log('nameNo : ' +nameNo)
+console.log('nameNo : ' + nameNo)
 
 
 
 // set value
 student3 = { id: 13, age: 27, name: 'bhuyan' }
 student3.id = 333
-console.log('updat id : ' +student3.id)
+console.log('updat id : ' + student3.id)
 student3["age"] = 55
-console.log('updat age : ' +student3.age)
+console.log('updat age : ' + student3.age)
 var names = student3["name"]
-names= "jamal"  
-console.log('updat name : ' +names)
+names = "jamal"
+console.log('updat name : ' + names)
 

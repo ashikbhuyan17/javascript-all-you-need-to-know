@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>My List</h1>
+        <ul id="myList">
+            <li id="first">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Delectus pariatur fuga vel veritatis.</li>
+            <li class="item">Sint corporis corrupti neque eligendi?</li>
+            <li class="item">Quam iure eum ex cumque!</li>
+            <li class="item">Optio quae voluptates odit et!</li>
+        </ul>
+        <button id="addNew">click Me</button>
+    </div>
+
+    <script>
+
+        /* 
+       for append
+       1. element findout
+       2. event add kora => mane click krle kichu ekta hobe
+       3. parent node/element take khuje ber kora jekhae ami append krbo => element findout
+       4. ki doroner element ami add krbo ta create kora ex: a,li,p.... => createElement
+       5. added innerText
+       6. parent element kace append krbo nes element ke
+
+       */
+        document.getElementById('addNew').addEventListener('click', function (event) {
+            var element = document.getElementById('myList')
+            var newItem = document.createElement('li')
+            newItem.innerText = 'this is new line'
+            element.appendChild(newItem)
+
+        })
+
+        /*  for remove.... ekane append korar por append value gula delet hocce na 
+              var items = document.getElementsByClassName('item')
+              for (let i = 0; i < items.length; i++) {
+                  const element = items[i];
+                  // console.log(element)
+                  element.addEventListener('click', function (event) {
+                      // console.log(this);
+                      // event.target => current element or node
+                      // console.log(event.target);
+                      // console.log(event.target.innerText);
+                      // console.log(event.target.parentNode);
+      
+                      // remove korar jonno
+                      event.target.parentNode.removeChild(event.target)
+      
+                  })
+      
+              }
+      
+              */
+
+
+        document.getElementById('myList').addEventListener('click', function (event) {
+            // event.target => current element or node
+            console.log(this, event.target);
+            event.target.parentNode.removeChild(event.target)
+        })
+
+
+
+    </script>
+</body>
+
+</html>

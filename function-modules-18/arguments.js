@@ -8,7 +8,7 @@
 
 
 // Arguments are values passed to the function when it is invoked.
-//  kichuta array moto
+//  Arguments are not a array . it is an array like object .
 
 
 
@@ -37,7 +37,7 @@ function addNumbers(num1, num2) {
         const element = arguments[i];
         // console.log(element);
         summation = summation + element
-        console.log(summation);        
+        console.log(summation);
     }
     return summation
 }

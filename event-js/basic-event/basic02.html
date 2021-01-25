@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button-1">click me - 1</button>
+    <button id="button-2">click me - 2</button>
+    <button id="button-3">click me - 3</button>
+
+    <script>
+
+
+        // var btn1 = document.getElementById('button-1')
+        // addEventListener => multiple event add kora jabe
+        // btn1.addEventListener('click', handleClick)
+
+
+        document.getElementById('button-1').addEventListener('click',
+            function handleClick() {
+                document.body.style.backgroundColor = 'tomato'
+                alert('backgroundColor changes');
+            }
+        )
+
+
+        // bt2
+        function handleClick() {
+            document.body.style.backgroundColor = 'tomato'
+            alert('backgroundColor changes');
+        }
+
+        var btn2 = document.getElementById('button-2')
+        btn2.onclick = handleClick;
+
+
+
+
+        // bt3
+        var btn3 = document.getElementById('button-3')
+        // anonymous function => function ()
+        btn3.onclick = function () {
+            console.log('click me - 1');
+        } 
+    </script>
+</body>
+
+</html>
