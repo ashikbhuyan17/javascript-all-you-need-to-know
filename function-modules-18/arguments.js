@@ -48,3 +48,40 @@ console.log('summation is : ' + result);
 
 
 
+
+// 
+
+// function userName(firstName) {
+
+//     console.log(arguments);
+//     let fullName = '';
+//     for (let i = 0; i < arguments.length; i++) {
+//         const namePart = arguments[i];
+//         fullName = fullName + ' ' + namePart
+//     }
+//     return fullName
+
+
+// }
+
+// const nameOf = userName('hanif', 'sonkhet', 'poribohon','subokta')
+// console.log(nameOf);
+
+
+// convert  array to arguments
+function userName(firstName) {
+    console.log(arguments);
+    const result = [...arguments].join(' ')
+    return result
+    // let fullName = '';
+    // for (let i = 0; i < arguments.length; i++) {
+    //     const namePart = arguments[i];
+    //     fullName = fullName + ' ' + namePart
+    // }
+    // return fullName
+
+
+}
+
+const nameOf = userName('hanif', 'sonkhet', 'poribohon', 'subokta')
+console.log(nameOf);
