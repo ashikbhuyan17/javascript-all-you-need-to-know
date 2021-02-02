@@ -18,3 +18,4 @@ const number3 = [10, 3, 4, 5, 11, 22]
 const joinElement = number3.join(" ")
 console.log('join : ', joinElement);
 
+
