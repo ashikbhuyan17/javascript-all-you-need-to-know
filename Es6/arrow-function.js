@@ -46,10 +46,21 @@ console.log('totalResult = ' + totalResult);
 
 
 // IIFE
-(summation = ()=> {
+(summation = () => {
     // local variable
     var a, b;
     a = 10, b = 20
     sum = a + b
     console.log(sum);
-  })();
+})();
+
+
+
+const multi = (num) => num * num
+// const arr = [1, 2, 3, 4, 5]
+console.log(multi(4));
+console.log(multi(10));
+
+
+
+
