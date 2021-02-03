@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whoami</title>
+</head>
+
+<body>
+    <h1>Name : <span id="randomName"></span></h1>
+
+    <script>
+        function nameChanging() {
+            fetch('https://randomuser.me/api')
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    const user = data.results[0].name
+                    // const userName = `${user.title + ' ' + user.first + ' ' + user.last}`
+                    const userName = `${user.title} ${user.first} ${user.last}`
+
+
+                    console.log(userName);
+                    document.getElementById('randomName').innerText = userName
+                })
+        }
+        nameChanging()
+        setInterval(() => {
+            nameChanging()
+        }, 1000);
+    </script>
+</body>
+
+</html>
