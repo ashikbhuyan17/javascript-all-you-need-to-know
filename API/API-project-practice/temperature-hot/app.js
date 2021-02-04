@@ -1,8 +1,6 @@
 const apiKey = '5d9786f497d73b7a1a4aba05aea882a5'
 const apiBase = 'http://api.openweathermap.org/data/2.5/weather'
 
-
-
 document.getElementById('search_button').addEventListener('click', function () {
     const inputCity = document.getElementById('city').value
     console.log(inputCity.length);
