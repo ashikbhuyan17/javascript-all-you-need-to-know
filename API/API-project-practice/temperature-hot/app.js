@@ -5,8 +5,12 @@ const apiBase = 'http://api.openweathermap.org/data/2.5/weather'
 
 document.getElementById('search_button').addEventListener('click', function () {
     const inputCity = document.getElementById('city').value
-    console.log(inputCity);
-    temperature(inputCity)
+    console.log(inputCity.length);
+    if (inputCity.length > 0) {
+        temperature(inputCity)
+    } else {
+        console.log("try again");
+    }
 })
 
 
@@ -20,6 +24,8 @@ function temperature(city) {
             const location = document.getElementById('location').innerText = data.name;
             const temp = document.getElementById('show_temp').innerText = data.main.temp;
             const clouds = document.getElementById('weather_status').innerText = data.weather[0].main;
+            document.getElementById('icon').setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+            document.getElementById('city').value = ""
             console.log(location, temp, clouds);
         })
 }
