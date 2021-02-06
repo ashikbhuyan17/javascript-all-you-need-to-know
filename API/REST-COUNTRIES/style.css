@@ -8,9 +8,23 @@
    border: 1px solid rebeccapurple;
    text-align: center;
    width: 300px;
+   padding-bottom: 10px;
     
 }
 .country-name {
     font-size: 40px;
     color: royalblue;
+}
+
+#countryDetails{
+    border: 1px solid rebeccapurple;
+    width: 50%;
+    text-align: center;
+    color: white;
+    background-color: teal;
+    margin-bottom: 30px;
+}
+#countryDetails img{
+    width: 300px;
+    padding-bottom: 10px;
 }
