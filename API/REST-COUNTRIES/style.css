@@ -1,0 +1,16 @@
+#countries{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   grid-gap: 30px;
+}
+
+.country{
+   border: 1px solid rebeccapurple;
+   text-align: center;
+   width: 300px;
+    
+}
+.country-name {
+    font-size: 40px;
+    color: royalblue;
+}
