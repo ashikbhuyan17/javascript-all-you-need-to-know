@@ -22,7 +22,7 @@ var arr1 = [1, 4, 7]
 var arr2 = [5, 4, 10]
 var arr3 = [15, 4, 7]
 
-function sumArray(arr) {
+const sumArray = function (arr) {
     var sum = 0
     for (i = 0; i < arr.length; i++) {
         sum = sum + arr[i]
