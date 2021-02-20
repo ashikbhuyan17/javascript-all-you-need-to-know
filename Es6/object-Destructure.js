@@ -5,7 +5,7 @@
 
 const person = { Name: 'jamal', age: 20, job: 'facebook', location: 'dhaka', friends: { Name: 'kamal', age: 33 } }
 
-// Destructure => kono ekta array or object theke  kono one or multiple element ke  variable rakar shortcut upay
+// Destructuring => kono ekta array or object theke  kono one or multiple element ke  variable rakar shortcut upay
 // person object er bitor takhe name and age property niye asa hoiyeche
 // multiple property niye asar jonno  
 const { Name, age } = person
@@ -20,7 +20,7 @@ console.log(Name, age);
 console.log(person.friends.Name, person.friends.age);
 
 
-// destructure complex object
+// destructuring complex object
 const complex = {
     Nameof: 'jamal',
     info: {
@@ -30,3 +30,39 @@ const complex = {
 
 const { address } = complex.info //address ta variable hisebe ace ekane
 console.log(address);
+
+
+
+
+// object
+const zonayedObj = {
+    nameObj: 'Zonayed Ahmed',
+    ageObj: 21,
+    professionObj: 'Student'
+};
+
+// Es5
+// var nameObj5 = zonayedObj.nameObj;
+// var ageObj5 = zonayedObj.ageObj;
+// var professionObj5 = zonayedObj.professionObj;
+
+const { nameObj, ageObj, professionObj } = zonayedObj;
+console.log("obj : ", nameObj, ageObj, professionObj);
+
+// or
+var comObj = {
+    anotherObj: {
+        anotherNewObj: {
+            title: 'JavaScript ES6'
+        }
+    },
+    ages: 30,
+};
+
+// normal way
+// const titleOf = comObj.anotherObj.anotherNewObj.title
+// console.log(titleOf);
+
+// destructuring way
+const { anotherObj: { anotherNewObj: { title: newTitle } }, ages } = comObj
+console.log(newTitle, age);
