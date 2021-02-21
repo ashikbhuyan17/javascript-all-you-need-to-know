@@ -12,14 +12,14 @@ Note: filter() does not change the original array.
 // find
 const num = [10, 99, 55, 44, 33, 88]
 const newNumber = num.find((num) => {
-    return num > 55;
+    return num < 55;
 })
 console.log(newNumber);
 
 // find
 const object = [
     { names: 'jaforikbal', available: 30, marks: 40 },
-    { names: 'kamal', available: 30, marks: 60 },
+    { names: 'kamal', available: 30, marks: 45 },
     { names: 'nasim', available: 1, marks: 50 }
 ]
 
