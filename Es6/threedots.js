@@ -32,3 +32,4 @@ console.log(result);
 const friends2 = ['salam', 'jamal', 'rahim', 'karim']
 const newArray = [...friends2, 'ashik']
 console.log("create new array : ", newArray);
+
