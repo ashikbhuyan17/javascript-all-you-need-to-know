@@ -66,3 +66,19 @@ var comObj = {
 // destructuring way
 const { anotherObj: { anotherNewObj: { title: newTitle } }, ages } = comObj
 console.log(newTitle, age);
+
+
+const comObj2 = {
+    anotherObj: {
+        title: 'JavaScript ES6',
+        age: 40,
+        location: 'dhaka'
+    },
+    ages: 30,
+};
+const { anotherObj } = comObj2
+console.log("anotherObject ", anotherObj);
+const { anotherObj: { location } } = comObj2
+console.log("findLocation : ", location);
+const { title } = comObj2.anotherObj
+console.log("title :", title); 

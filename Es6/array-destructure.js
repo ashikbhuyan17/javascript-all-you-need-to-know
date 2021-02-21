@@ -1,3 +1,22 @@
+
+const [x, y] = [10, 30]
+console.log("x,y :", x, y);
+
+const numbers = [10, 66, 33, 44, 22]
+const [num3] = numbers
+console.log(num3);
+
+
+function boxify(num) {
+    return [num, num + 4]
+}
+
+const [box1, box2] = boxify(10)
+console.log("boxed : ", box1, box2);
+
+
+
+
 const friends = ['salam', 'jamal', 'rahim', 'karim']
 // console.log(friends);
 const [firstName, nextName, ...restFriend] = friends
