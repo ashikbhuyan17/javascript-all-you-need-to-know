@@ -26,3 +26,9 @@ console.log(addNumber);
 const arr = [10, 99, 5, 88, 45]
 const result = Math.max(...arr)
 console.log(result);
+
+
+// new array create using 3dots
+const friends2 = ['salam', 'jamal', 'rahim', 'karim']
+const newArray = [...friends2, 'ashik']
+console.log("create new array : ", newArray);

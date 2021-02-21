@@ -19,6 +19,14 @@ console.log(Name, age);
 
 console.log(person.friends.Name, person.friends.age);
 
+// create object shortcut
+const one = 10
+const two = 20
+const obj = { one, two }
+console.log("object shortcut : ", obj);
+
+
+
 
 // destructuring complex object
 const complex = {

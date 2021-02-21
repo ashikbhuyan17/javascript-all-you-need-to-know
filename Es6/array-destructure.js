@@ -37,3 +37,8 @@ const [name6, age6, profession6] = zonayed
 console.log(name6, age6, profession6);   //Es6
 
 
+// new array create
+const friends2 = ['salam', 'jamal', 'rahim', 'karim']
+const newArray = [...friends2, 'ashik']
+console.log("create new array : ", newArray);
+
