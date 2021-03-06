@@ -20,6 +20,7 @@
         <article id="remove">
             <h1>h1-3</h1>
             <p>lorem12</p>
+            <button id="deleteElement">remove item</button>
         </article>
         <article>
             <ul id="gift-list">
@@ -65,8 +66,13 @@
         list.appendChild(addList)
 
         // remove element
-        var deleteAble = document.getElementById('remove')
-        deleteAble.remove()
+        // var deleteAble = document.getElementById('remove')
+        // deleteAble.remove()
+        Object.assign(document.getElementById('remove').style, styles);
+        document.getElementById('deleteElement').addEventListener("click", () => {
+            var deleteAble = document.getElementById('remove')
+            deleteAble.remove()
+        })
 
 
     </script>
