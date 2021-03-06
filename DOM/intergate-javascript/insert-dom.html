@@ -36,11 +36,22 @@
     <script>
 
         // added 
-        const article = document.getElementById('first-article')
-        console.log(article)
-        const newPeragraph = document.createElement('p')
-        newPeragraph.innerHTML = 'this is added by  js '
-        article.appendChild(newPeragraph)
+        const first = document.getElementById('first-article')
+        const styles = {
+            color: 'white',
+            padding: '10px',
+            backgroundColor: 'black',
+            width: '300px',
+            textAlign: 'center'
+        };
+        Object.assign(first.style, styles);
+
+        console.log(first)
+        const newParagraph = document.createElement('p')
+        newParagraph.innerText = 'this is added by  js ' //text
+        first.appendChild(newParagraph)
+        // article.insertAdjacentElement('beforeend', newParagraph);
+
 
 
         // add one more gift item 
@@ -48,12 +59,14 @@
         const list = document.getElementById('gift-list')
         console.log(list);
         const addList = document.createElement('li');
-        addList.innerHTML = 'added extra gift item';
+        addList.innerHTML = `<li>extra 1 </li>
+        <li>extra 2 </li>
+        `;
         list.appendChild(addList)
 
         // remove element
-        var delet = document.getElementById('remove')
-        delet.remove()
+        var deleteAble = document.getElementById('remove')
+        deleteAble.remove()
 
 
     </script>
