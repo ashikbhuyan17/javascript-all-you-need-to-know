@@ -1,0 +1,1 @@
+1. rest operator accept kore multiple argument ja ekta array te convert kore 
